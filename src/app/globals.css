@@ -2,25 +2,69 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #414141;
+
+  /* Primary Colors */
+  --color-primary-pink: #ff3769;
+  --color-primary-magenta: #e56182;
+  --color-primary-purple: #a519ff;
+
+  /* Accent Colors */
+  --color-accent-yellow: #ffe600;
+  --color-accent-lime: #d2f000;
+  --color-accent-green: #00c378;
+  --color-accent-mint: #4fd8a3;
+  --color-accent-cyan: #6ee6ff;
+  --color-accent-skyblue: #64cfe5;
+  --color-accent-blue: #70add3;
+  --color-accent-lightblue: #82c5ef;
+  --color-accent-violet: #af61e2;
+
+  /* Neutral Colors */
+  --color-neutral-white: #ffffff;
+  --color-neutral-lightgray: #f4f4f4;
+  --color-neutral-gray: #9b9b9b;
+  --color-neutral-mediumgray: #a7a7a7;
+  --color-neutral-darkgray: #414141;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-noto-sans-jp);
+  --font-display: var(--font-ubuntu);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Primary */
+  --color-primary-pink: #ff3769;
+  --color-primary-magenta: #e56182;
+  --color-primary-purple: #a519ff;
+
+  /* Accent */
+  --color-accent-yellow: #ffe600;
+  --color-accent-lime: #d2f000;
+  --color-accent-green: #00c378;
+  --color-accent-mint: #4fd8a3;
+  --color-accent-cyan: #6ee6ff;
+  --color-accent-skyblue: #64cfe5;
+  --color-accent-blue: #70add3;
+  --color-accent-lightblue: #82c5ef;
+  --color-accent-violet: #af61e2;
+
+  /* Neutral */
+  --color-neutral-white: #ffffff;
+  --color-neutral-lightgray: #f4f4f4;
+  --color-neutral-gray: #9b9b9b;
+  --color-neutral-mediumgray: #a7a7a7;
+  --color-neutral-darkgray: #414141;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans-jp), sans-serif;
+}
+
+/* Gradient for Header Buttons */
+.gradient-pink-purple {
+  background: linear-gradient(135deg, #ff3769 0%, #a519ff 100%);
 }
